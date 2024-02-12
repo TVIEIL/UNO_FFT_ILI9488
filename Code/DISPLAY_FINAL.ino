@@ -166,8 +166,7 @@ if (WriteFrequenciesOnLCD == true) {
 
 
         test_valeur = (unsigned int)Freq_value_Data[Posi][1];
-        test_valeur = test_valeur+1;
-        test_valeur = test_valeur-2;
+        
         if (test_valeur <=42) {tft.drawRect(x, y,xwide_value_FFT,25,ILI9488_BLACK);}
         if (test_valeur >=43 && test_valeur <=84) {tft.drawRect(x, y,xwide_value_FFT,25,ILI9488_BLACK);} 
         if (test_valeur>=85 && test_valeur<=126)  {tft.drawRect(x, y,xwide_value_FFT,25, ILI9488_BLACK);}
