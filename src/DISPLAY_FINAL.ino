@@ -1,25 +1,32 @@
-
-         /*
-         * Vieil Thierry 22/08/2022
-         * Audio Spectrum Analyzer
-         * ILI9488 Display Results of FFT Analyze 
-         *
-         * Exemple des 12 données transférées :
-         * 
-         * 390 Hz; 0
-         * 468 Hz; 0
-         * 546 Hz; 0
-         * 625 Hz; 1
-         * 703 Hz; 0
-         * 781 Hz; 0
-         * 859 Hz; 2
-         * 937 Hz; 43
-         * 1015 Hz; 70
-         * 1093 Hz; 21
-         * 1171 Hz; 0
-         * 1250 Hz; 0
-         */
-
+/*
+ * ==============================================================================
+ * @Project       : UNO_FFT_ILI9488  AFFICHEUR
+ * @Author        : Thierry VIEIL
+ * @Date          : 22/08/2022
+ * @LastModified  : 25/05/2026
+ * @License       : Apache License 2.0
+ *
+ * @Description   : Audio Spectrum Analyzer. 
+ * ILI9488 Display Results of FFT Analyze.
+ *
+ * Example of data format (12 data points transferred):
+ * 390 Hz; 0 | 468 Hz; 0 | 546 Hz; 0 | 625 Hz; 1 | 703 Hz; 0 | 781 Hz; 0
+ * 859 Hz; 2 | 937 Hz; 43 | 1015 Hz; 70 | 1093 Hz; 21 | 1171 Hz; 0 | 1250 Hz; 0
+ * ==============================================================================
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ==============================================================================
+ */
 
 #include "SPI.h"
 #include <Adafruit_GFX.h>
